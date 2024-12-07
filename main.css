@@ -1,0 +1,636 @@
+body{
+    margin: 0; 
+    height: 100vh;  
+    background-image: url(imgs/bgwebsite.png); 
+    background-size: cover;  
+    background-repeat: repeat; 
+    background-position: center;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+  }
+.topline{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(154, 65, 255);
+}
+.links{
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 5px;
+    text-align: center;
+    position: sticky;
+    font-family: "Nothing You Could Do";
+}
+
+.heading{
+    text-align: center;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;     
+    display: flex;
+    flex-direction: column;
+    font-family: "Nothing You Could Do";     
+}
+#text{
+    font-family: "Nothing You Could Do";
+    padding-top: 0px;
+}
+
+/*popup 1 starts*/
+
+.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-500%)
+}
+
+.pop1 {
+    padding: 10px 40px;
+    background: #e195ff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Nothing You Could Do";
+    border-radius: 30px;
+}
+
+.popup1{
+    width: 400px;
+    background: #e9bcff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #4a0d67;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup1 img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50px;
+    border-color: #4a0d67;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.popup1 h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    font-family: "Nothing You Could Do";
+}
+.popup1 button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: rgb(77, 4, 167);
+    color: #fbf9fe;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    font-family: "Nothing You Could Do";
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup1 p{
+    font-family: "Nothing You Could Do";
+    font-size: medium;
+
+}
+
+/*second popup begins*/
+.popup2 {
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-500%)
+}
+.popup2{
+    width: 400px;
+    height: 250px;
+    background: #e9bcff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #4a0d67;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup2 img{
+    margin: auto;
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50px;
+    border-color: #4a0d67;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.popup2 h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+    font-family: "Nothing You Could Do";
+}
+.popup2 button{
+    margin:
+    margin-right: 200px;
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: rgb(77, 4, 167);
+    color: #fbf9fe;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    font-family: "Nothing You Could Do";
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup2 p{
+    font-family: "Nothing You Could Do";
+    font-size: 20px;
+
+}
+/*third popup begins*/
+.popup3 {
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-500%)
+}
+.popup3{
+    width: 400px;
+    height: 250px;
+    background: #e9bcff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #4a0d67;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup3 img{
+    margin: auto;
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50px;
+    border-color: #4a0d67;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.popup3 h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+    font-family: "Nothing You Could Do";
+}
+.popup3 button{
+    margin:
+    margin-right: 200px;
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: rgb(77, 4, 167);
+    color: #fbf9fe;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    font-family: "Nothing You Could Do";
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup3 p{
+    font-family: "Nothing You Could Do";
+    font-size: 20px;
+
+}
+/*fourth popup begins*/
+.popup4 {
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-500%)
+}
+.popup4{
+    width: 400px;
+    height: 250px;
+    background: #e9bcff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #4a0d67;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup4 img{
+    margin: auto;
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50px;
+    border-color: #4a0d67;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.popup4 h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+    font-family: "Nothing You Could Do";
+}
+.popup4 button{
+    margin:
+    margin-right: 200px;
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background: rgb(77, 4, 167);
+    color: #fbf9fe;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    font-family: "Nothing You Could Do";
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup4 p{
+    font-family: "Nothing You Could Do";
+    font-size: 15px;
+    
+
+}
+/*fifth popup begins*/
+.popup5 {
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-500%)
+}
+.popup5{
+    width: 400px;
+    height: 250px;
+    background: #e9bcff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #4a0d67;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup5 img{
+    margin: auto;
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50px;
+    border-color: #4a0d67;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.popup5 h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+    font-family: "Nothing You Could Do";
+}
+.popup5 button{
+    margin:
+    margin-right: 200px;
+    width: 60%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background: rgb(77, 4, 167);
+    color: #fbf9fe;
+    border: 0;
+    outline: none;
+    font-size: 13px;
+    font-family: "Nothing You Could Do";
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup5 p{
+    font-family: "Nothing You Could Do";
+    font-size: 15px;
+    
+
+}
+/*sixth popup begins*/
+.popup6 {
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-500%)
+}
+.popup6{
+    width: 400px;
+    height: 250px;
+    background: #e9bcff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #4a0d67;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup6 img{
+    margin: auto;
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50px;
+    border-color: #4a0d67;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.popup6 h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+    font-family: "Nothing You Could Do";
+}
+.popup6 button{
+    margin:
+    margin-right: 200px;
+    width: 70%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background: rgb(77, 4, 167);
+    color: #fbf9fe;
+    border: 0;
+    outline: none;
+    font-size: 13px;
+    font-family: "Nothing You Could Do";
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup6 p{
+    font-family: "Nothing You Could Do";
+    font-size: 15px;
+    
+
+}
+/*text input*/
+textarea, input {
+        width: 50%;
+        max-width: 600px;
+        font-size: 10px;
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid #50048a;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    textarea:focus, input:focus {
+        border-color: #cb7dff;
+        outline: none;
+        box-shadow: 0px 2px 5px rgba(74, 144, 226, 0.5);
+    }
+/*seventh popup begins*/
+.popup7 {
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-500%)
+}
+.popup7{
+    width: 400px;
+    height: 250px;
+    background: #e9bcff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #4a0d67;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup7 img{
+    margin: auto;
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50px;
+    border-color: #4a0d67;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.popup7 h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+    font-family: "Nothing You Could Do";
+}
+.popup7 button{
+    margin:
+    margin-right: 200px;
+    width: 70%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background: rgb(77, 4, 167);
+    color: #fbf9fe;
+    border: 0;
+    outline: none;
+    font-size: 13px;
+    font-family: "Nothing You Could Do";
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup7 p{
+    font-family: "Nothing You Could Do";
+    font-size: 15px;
+}
+/*eighth popup begins*/
+.popup8 {
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-500%)
+}
+.popup8{
+    width: 400px;
+    height: 400px;
+    background: #e9bcff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #4a0d67;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup8 img{
+    margin: auto;
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50px;
+    border-color: #4a0d67;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.popup8 h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+    font-family: "Nothing You Could Do";
+}
+.popup8 button{
+    margin:
+    margin-right: 0px;
+    width: 40%;
+    margin-top: 30px;
+    padding: 10px 0;
+    background: rgb(77, 4, 167);
+    color: #fbf9fe;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    font-family: "Nothing You Could Do";
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup8 p{
+    font-family: "Nothing You Could Do";
+    font-size: 15px;
+}
+/*Quiz*/
+.container {
+    margin-left: 100px;
+    margin-top: 40px;
+    background-color: #dd7cfd;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+  }
+.rating label {
+    display: block;
+    font-size: 15px;
+    font-family: "Nothing You Could Do";
+}
+  
+input[type="radio"] {
+    margin-right: 5px;
+}  
+/*ninth popup begins*/
+.popup9 {
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-500%)
+}
+.popup9{
+    width: 400px;
+    height: 250px;
+    background: #e9bcff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #4a0d67;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup9 img{
+    margin: auto;
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50px;
+    border-color: #4a0d67;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.popup9 h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 10px;
+    font-family: "Nothing You Could Do";
+}
+.popup9 button{
+    margin:
+    margin-right: 0px;
+    width: 40%;
+    margin-top: 30px;
+    padding: 10px 0;
+    background: rgb(77, 4, 167);
+    color: #fbf9fe;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    font-family: "Nothing You Could Do";
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup9 p{
+    font-family: "Nothing You Could Do";
+    font-size: 15px;
+}

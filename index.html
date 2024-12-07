@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imgs/heart" href="imgs/heart_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Happy 2 Years!</title>
+</head>
+<body>
+    <div class="topline"></div>
+    <div class="links"></div>
+    <a class="links" href="letter.html">Nothing to see hehe</a>
+    <a class="links" href="bts.html">BTS(not bts)</a>
+    <div class="heading">
+    <h1>2 Years Meeting Anniversary :)</h1>
+    <p id="text">for my love who lights up my soul everyday</p>
+    </div>
+<!---Popup 1-->
+    <div class="popup">
+        <button type="button" class="pop1" onclick="openPopup()">where's my gift?</button>
+        <div class="popup1" id="popup">
+          <img src="imgs/popup1.JPG" width="100px">
+          <h2>Your gift is right here!!</h2>
+          <p>It's just after this popup. Proceed to find it ;)</p>
+          <button type="button" onclick="closePopup(),openSecondPopup()">ily muah</button>
+        </div>
+    </div>
+<!--Popup 2-->
+<div class="popup2" id="secondPopup">
+    <img src="imgs/popup2.jpg" width="100px">
+    <h2>bb happy?</h2>
+    <p>i lied ehehe. Your gift is after THIS popup</p>
+    <button type="button" onclick="closeSecondPopup(),openThirdPopup()">you're so sexy ok</button>
+</div>
+<!--Popup 3-->
+<div class="popup3" id="thirdPopup">
+    <img src="imgs/popup3.jpg" width="100px">
+    <h2>bb cute?</h2>
+    <p>ok sorry, i'll stop fucking around. You'll get your gift NOW</p>
+    <button type="button" onclick="closeThirdPopup(),openFourthPopup()">....ok -_-</button>
+</div>
+<!--Popup 4-->
+<div class="popup4" id="fourthPopup">
+    <img src="imgs/popup4.jpg" width="100px">
+    <h2>bb mine? bb muaj?</h2>
+    <p>bruh i am SO annoying😭,but ig this'll teach u to be patient.Be a good boy and you'll get your gift ;)) </p>
+    <button type="button" onclick="closeFourthPopup(),openFifthPopup()">anything for my queen</button>
+</div>
+<!--Popup 5-->
+<div class="popup5" id="fifthPopup">
+    <img src="imgs/popup5.jpg" width="100px">
+    <h2>You want your gift?</h2>
+    <p>Are you sure you wanna still be my boyfie? ehehe (you better be wtf)</p>
+    <button type="button" onclick="closeFifthPopup(),openSixthPopup()">of course lemme bow down for you</button>
+</div>
+<!--Popup 6-->
+<div class="popup6" id="sixthPopup">
+    <img src="imgs/popup6.jpg" width="100px">
+    <h2>Say Please?</h2>
+    <p>be nice to me and you will get your gift >:))</p>
+    <input type="text" id="typingInput" placeholder="only write 'please'i'm bad at coding🙏"/>
+    <button type="button" onclick="closeSixthPopup(),openSeventhPopup()">i am made for you my tall soulmate</button>
+</div>
+<!--Popup 7-->
+<div class="popup7" id="seventhPopup">
+    <img src="imgs/popup7.jpg" width="100px">
+    <h2>Quiz Timee ^-^</h2>
+    <p>Just a quick quiz and then bb can have his gift! see i'm so nice</p>
+    <button type="button" onclick="closeSeventhPopup(),openEighthPopup()">will you marry me?</button>
+</div>
+<!--Popup 8-->
+<div class="popup8" id="eighthPopup">
+    <img src="imgs/popup8.jpg" width="100px">
+    <h2>Answer Wisely!1!!</h2>
+    <p>What do i love about you?</p>
+<!--Quiz-->
+  <div class="container">
+    <form action="#" method="POST">
+      <div class="rating">
+        <label>
+          <input type="radio" name="rating" value="1"> Your eyes
+        </label>
+        <label>
+          <input type="radio" name="rating" value="2"> Your Lips
+        </label>
+        <label>
+          <input type="radio" name="rating" value="3"> Your smile
+        </label>
+        <label>
+          <input type="radio" name="rating" value="4"> Your laugh
+        </label>
+        <label>
+          <input type="radio" name="rating" value="5"> Your moles
+        </label>
+      </div>
+      
+    </div>
+    </form>
+    <button type="button" onclick="closeEighthPopup(),openNinthPopup()">let's make out</button>
+</div>
+<!--Popup 9-->
+<div class="popup9" id="ninthPopup">
+    <img src="imgs/popup9.jpg" width="100px">
+    <h2>bb annoyed? >:))</h2>
+    <p>ok fr now, i'll give you my gift. Happy 2 years meetversary my love, i love you forever and always</p>
+    <a href="letter.html"><button type="button" onclick="openNinthPopup()">FINALLY</button></a>
+</div>
+<!--JAVA-->
+<script>
+let popup = document.getElementById("popup");
+        let secondPopup = document.getElementById("secondPopup");
+        let thirdPopup = document.getElementById("thirdPopup");
+        let fourthPopup = document.getElementById("fourthPopup");
+        let fifthPopup = document.getElementById("fifthPopup");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+
+        function openSecondPopup() {
+            secondPopup.classList.add("open-popup");
+        }
+
+        function closeSecondPopup() {
+            secondPopup.classList.remove("open-popup");
+        }
+
+        function openThirdPopup() {
+            thirdPopup.classList.add("open-popup");
+        }
+
+        function closeThirdPopup() {
+            thirdPopup.classList.remove("open-popup");
+        }
+
+        function openFourthPopup() {
+            fourthPopup.classList.add("open-popup");
+        }
+
+        function closeFourthPopup() {
+            fourthPopup.classList.remove("open-popup");
+        }
+
+        function openFifthPopup() {
+            fifthPopup.classList.add("open-popup");
+        }
+
+        function closeFifthPopup() {
+            fifthPopup.classList.remove("open-popup");
+        }
+
+        function openSixthPopup() {
+            sixthPopup.classList.add("open-popup");
+        }
+
+        function closeSixthPopup() {
+            sixthPopup.classList.remove("open-popup");
+        }
+
+        function openSeventhPopup() {
+            seventhPopup.classList.add("open-popup");
+        }
+
+        function closeSeventhPopup() {
+            seventhPopup.classList.remove("open-popup");
+        }
+
+        function openEighthPopup() {
+            eighthPopup.classList.add("open-popup");
+        }
+
+        function closeEighthPopup() {
+            eighthPopup.classList.remove("open-popup");
+        }
+
+        function openNinthPopup() {
+            ninthPopup.classList.add("open-popup");
+        }
+
+        function closeNinthPopup() {
+            ninthPopup.classList.remove("open-popup");
+        }
+
+</script>   
+</body>
+</html>
